@@ -10,12 +10,12 @@
 		6374C9B12B853C4B00E14A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9B02B853C4B00E14A1B /* AppDelegate.swift */; };
 		6374C9B32B853C4B00E14A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9B22B853C4B00E14A1B /* SceneDelegate.swift */; };
 		6374C9B52B853C4B00E14A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9B42B853C4B00E14A1B /* ViewController.swift */; };
-		6374C9B82B853C4B00E14A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6374C9B62B853C4B00E14A1B /* Main.storyboard */; };
 		6374C9BA2B853C4C00E14A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6374C9B92B853C4C00E14A1B /* Assets.xcassets */; };
 		6374C9BD2B853C4C00E14A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6374C9BB2B853C4C00E14A1B /* LaunchScreen.storyboard */; };
 		6374C9C82B853C4C00E14A1B /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9C72B853C4C00E14A1B /* MovieTests.swift */; };
 		6374C9D22B853C4C00E14A1B /* MovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9D12B853C4C00E14A1B /* MovieUITests.swift */; };
 		6374C9D42B853C4C00E14A1B /* MovieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374C9D32B853C4C00E14A1B /* MovieUITestsLaunchTests.swift */; };
+		6374C9E22B853D0000E14A1B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6374C9E12B853D0000E14A1B /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		6374C9B02B853C4B00E14A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6374C9B22B853C4B00E14A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6374C9B42B853C4B00E14A1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6374C9B72B853C4B00E14A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6374C9B92B853C4C00E14A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6374C9BC2B853C4C00E14A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6374C9BE2B853C4C00E14A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6374C9E22B853D0000E14A1B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,6 @@
 				6374C9B02B853C4B00E14A1B /* AppDelegate.swift */,
 				6374C9B22B853C4B00E14A1B /* SceneDelegate.swift */,
 				6374C9B42B853C4B00E14A1B /* ViewController.swift */,
-				6374C9B62B853C4B00E14A1B /* Main.storyboard */,
 				6374C9B92B853C4C00E14A1B /* Assets.xcassets */,
 				6374C9BB2B853C4C00E14A1B /* LaunchScreen.storyboard */,
 				6374C9BE2B853C4C00E14A1B /* Info.plist */,
@@ -143,6 +142,9 @@
 			dependencies = (
 			);
 			name = Movie;
+			packageProductDependencies = (
+				6374C9E12B853D0000E14A1B /* Alamofire */,
+			);
 			productName = Movie;
 			productReference = 6374C9AD2B853C4B00E14A1B /* Movie.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +217,9 @@
 				Base,
 			);
 			mainGroup = 6374C9A42B853C4B00E14A1B;
+			packageReferences = (
+				6374C9E02B853D0000E14A1B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 6374C9AE2B853C4B00E14A1B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +238,6 @@
 			files = (
 				6374C9BD2B853C4C00E14A1B /* LaunchScreen.storyboard in Resources */,
 				6374C9BA2B853C4C00E14A1B /* Assets.xcassets in Resources */,
-				6374C9B82B853C4B00E14A1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6374C9B62B853C4B00E14A1B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6374C9B72B853C4B00E14A1B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6374C9BB2B853C4C00E14A1B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,9 +442,7 @@
 				INFOPLIST_FILE = Movie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,9 +450,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mert.Movie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,9 +471,7 @@
 				INFOPLIST_FILE = Movie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,9 +479,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mert.Movie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -601,6 +601,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6374C9E02B853D0000E14A1B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6374C9E12B853D0000E14A1B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6374C9E02B853D0000E14A1B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6374C9A52B853C4B00E14A1B /* Project object */;
 }
