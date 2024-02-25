@@ -34,7 +34,6 @@
 		6374CA2B2B85633100E14A1B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA2A2B85633100E14A1B /* MainPresenter.swift */; };
 		6374CA2D2B85634100E14A1B /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA2C2B85634100E14A1B /* MainInteractor.swift */; };
 		6374CA2F2B85634F00E14A1B /* MainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA2E2B85634F00E14A1B /* MainContract.swift */; };
-		6374CA312B856BEE00E14A1B /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA302B856BEE00E14A1B /* RequestManager.swift */; };
 		6374CA342B856EEB00E14A1B /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374CA332B856EEB00E14A1B /* SearchResult.swift */; };
 		638A45392B8B48DE008F751C /* MainAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A45382B8B48DE008F751C /* MainAdapter.swift */; };
 		638A453E2B8B61BF008F751C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 638A453D2B8B61BF008F751C /* IQKeyboardManagerSwift */; };
@@ -142,7 +141,6 @@
 		6374CA2A2B85633100E14A1B /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		6374CA2C2B85634100E14A1B /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		6374CA2E2B85634F00E14A1B /* MainContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContract.swift; sourceTree = "<group>"; };
-		6374CA302B856BEE00E14A1B /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		6374CA332B856EEB00E14A1B /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		638A45382B8B48DE008F751C /* MainAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAdapter.swift; sourceTree = "<group>"; };
 		638A45402B8B6734008F751C /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
@@ -272,7 +270,6 @@
 			children = (
 				638A45522B8B7BBD008F751C /* Movie.entitlements */,
 				6374CA222B855DC400E14A1B /* Extensions */,
-				6374CA1F2B85563400E14A1B /* Network */,
 				6374C9E42B8543F400E14A1B /* Scenes */,
 				638A45552B8BED03008F751C /* Utils */,
 				6374C9B02B853C4B00E14A1B /* AppDelegate.swift */,
@@ -313,15 +310,6 @@
 				6374C9EC2B85464F00E14A1B /* SplashContract.swift */,
 			);
 			path = Splash;
-			sourceTree = "<group>";
-		};
-		6374CA1F2B85563400E14A1B /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				6374CA302B856BEE00E14A1B /* RequestManager.swift */,
-			);
-			name = Network;
-			path = "Networkü";
 			sourceTree = "<group>";
 		};
 		6374CA222B855DC400E14A1B /* Extensions */ = {
@@ -626,7 +614,6 @@
 				6374CA2F2B85634F00E14A1B /* MainContract.swift in Sources */,
 				6374CA2B2B85633100E14A1B /* MainPresenter.swift in Sources */,
 				6374C9B12B853C4B00E14A1B /* AppDelegate.swift in Sources */,
-				6374CA312B856BEE00E14A1B /* RequestManager.swift in Sources */,
 				638A454F2B8B763E008F751C /* MediaDetailContract.swift in Sources */,
 				6374C9B32B853C4B00E14A1B /* SceneDelegate.swift in Sources */,
 				638A45572B8BED1F008F751C /* ActivityIndicatorManager.swift in Sources */,
