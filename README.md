@@ -14,8 +14,8 @@ This project is a showcase of implementing VIPER architecture with programmatic 
 - **Singleton Pattern**: Incorporates the Singleton design pattern for managing global states and resources.
 
 ## Requirements
-- iOS 11.0+
-- Xcode 12.0+
+- iOS 15.0+
+- Xcode 15.0+
 - Swift 5.0+
 
 ## License
